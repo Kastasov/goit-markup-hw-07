@@ -19,37 +19,39 @@
   </head>
   <body class="body">
     <header class="header">
-      <div class="container header-flex-box">
-        <nav class="header-nav-flex-box">
+      <div class="container container--header">
+        <nav class="nav">
           <a href="./index.html" lang="en" class="logo"
-            ><span class="logo-accent"> Web</span>Studio</a
+            ><span class="logo__highlight"> Web</span>Studio</a
           >
-          <ul class="header-menu">
-            <li class="item">
-              <a href="./index.html" class="header-link">Студия</a>
+          <ul class="header-menu header-menu--position">
+            <li class="header-menu__item">
+              <a href="./index.html" class="header-menu__link">Студия</a>
             </li>
-            <li class="item">
-              <a href="./poftfolio.html" class="header-link current underline">Портфолио</a>
+            <li class="header-menu__item">
+              <a href="./poftfolio.html" class="header-menu__link header-menu__link--current"
+                >Портфолио</a
+              >
             </li>
-            <li class="item">
-              <a href="#" class="header-link">Контакты</a>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header-kontakt-box">
+        <div class="header-kontakt--position">
           <ul class="header-kontakt">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" lang="en" class="header-contact-link">
-                <svg class="header-contact-mail-logo">
+            <li class="header-kontakt__item">
+              <a href="mailto:info@devstudio.com" lang="en" class="header-kontakt__link">
+                <svg class="header-kontakt__logo header-kontakt__logo--mail">
                   <use href="./images/logo/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="header-contact-link">
-                <svg class="header-contact-smart-logo">
+            <li class="header-kontakt__item">
+              <a href="tel:+380961111111" class="header-kontakt__link">
+                <svg class="header-kontakt__logo header-kontakt__logo--phone">
                   <use href="./images/logo/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -67,33 +69,33 @@
       <section class="section">
         <!-- buttons-->
         <div class="container">
-          <ul class="portfolio-select-box">
-            <li class="flex-menu-item">
-              <button type="button" class="portfolio-buttons active">Все</button>
+          <ul class="filter">
+            <li class="filer__item">
+              <button type="button" class="filter__button filter__button--active">Все</button>
             </li>
-            <li class="flex-menu-item">
-              <button type="button" class="portfolio-buttons">Веб-сайты</button>
+            <li class="filer__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
-            <li class="flex-menu-item">
-              <button type="button" class="portfolio-buttons">Приложения</button>
+            <li class="filer__item">
+              <button type="button" class="filter__button">Приложения</button>
             </li>
-            <li class="flex-menu-item">
-              <button type="button" class="portfolio-buttons">Дизайн</button>
+            <li class="filer__item">
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li class="flex-menu-item">
-              <button type="button" class="portfolio-buttons">Маркетинг</button>
+            <li class="filer__item">
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
 
           <!-- project samples-->
-          <div class="project-samples">
-            <ul class="project-list-box">
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/technokryak.jpg" alt="скрин сайта компании Технокряк" />
+          <div class="projects projects__margin">
+            <ul class="projects__list">
+              <li class="card card-margin ">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/technokryak.jpg" alt="скрин сайта компании Технокряк" />
 
-                    <div class="project-over-text">
+                    <div class="card__overlay">
                       <p>
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о
@@ -101,21 +103,21 @@
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Технокряк</h3>
-                    <p class="project-description">Веб-сайт</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Технокряк</h3>
+                    <p class="card__type">Веб-сайт</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image"
                       src="./images/imgbasketgame.jpg"
                       alt="момент противоборства игроков двух команд"
                     />
-                    <div class="project-over-text">
+                    <div class="card__overlay">
                       <p>
                         В баскетбол играют две команды, каждая из которых состоит из пяти полевых
                         игроков (замены не ограничены). Цель каждой команды — забросить мяч в кольцо
@@ -125,18 +127,18 @@
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Постер New Orlean vs Golden Star</h3>
-                    <p class="project-description">Дизайн</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
+                    <p class="card__type">Дизайн</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/imgseafood.jpg" alt="логотип ресторана морепродуктов" />
-                    <div class="project-over-text">
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/imgseafood.jpg" alt="логотип ресторана морепродуктов" />
+                    <div class="card__overlay">
                       <p>
                         Симптомы отравления могут начаться через 2–8 часов после употребления рыбы.
                         Спазмы в животе, тошнота и диарея продолжаются от 6 до 17 часов, после чего
@@ -145,72 +147,72 @@
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Ресторан Seafood</h3>
-                    <p class="project-description">Приложение</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Ресторан Seafood</h3>
+                    <p class="card__type">Приложение</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/imgheadphones.jpg" alt="головные мониторы" />
-                    <div class="project-over-text">
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/imgheadphones.jpg" alt="головные мониторы" />
+                    <div class="card__overlay">
                       <p>
                         В наушниках часто возникает ощущение, что источник звука находится где-то
                         внутри головы.
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Проект Prime</h3>
-                    <p class="project-description">Маркетинг</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Проект Prime</h3>
+                    <p class="card__type">Маркетинг</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/imgboxes.jpg" alt="крафтовые упаковки" />
-                    <div class="project-over-text">
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/imgboxes.jpg" alt="крафтовые упаковки" />
+                    <div class="card__overlay">
                       <p>только лучшие упаковки - скроют секреты и сохранят Ваши сокровища</p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Проект Boxes</h3>
-                    <p class="project-description">Приложение</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Проект Boxes</h3>
+                    <p class="card__type">Приложение</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image"
                       src="./images/imgworldwide.jpg"
                       alt="сайт компании с глобальной картой присутсвия"
                     />
-                    <div class="project-over-text">
+                    <div class="card__overlay">
                       <p>
                         Мары́ — город на юге Туркмении, названный в честь древнего города Мерв, центр
                         Марыйского велаята. Второй по величине город современной Туркмении.
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Inspiration has no Borders</h3>
-                    <p class="project-description">Веб-сайт</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Inspiration has no Borders</h3>
+                    <p class="card__type">Веб-сайт</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/imgmagazin.jpg" alt="разворот журнала" />
-                    <div class="project-over-text">
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/imgmagazin.jpg" alt="разворот журнала" />
+                    <div class="card__overlay">
                       <p>
                         Хью Марстон Хефнер (англ. Hugh Marston Hefner; 9 апреля 1926, Чикаго — 27
                         сентября 2017, Лос-Анджелес) — американский издатель, основатель и
@@ -219,36 +221,36 @@
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Издание Limited Edition</h3>
-                    <p class="project-description">Дизайн</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Издание Limited Edition</h3>
+                    <p class="card__type">Дизайн</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/imglabel.jpg" alt="стильная этикетка" />
-                    <div class="project-over-text">
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/imglabel.jpg" alt="стильная этикетка" />
+                    <div class="card__overlay">
                       <p>
                         тикетка (от фр. etiquette; также ярлык) — графический или текстовый знак,
                         нанесённый в виде наклейки, бирки или талона на товар, экспонат
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Проект LAB</h3>
-                    <p class="project-description">Маркетинг</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Проект LAB</h3>
+                    <p class="card__type">Маркетинг</p>
                   </div>
                 </a>
               </li>
 
-              <li class="project-item">
-                <a href="#" class="project-item-link">
-                  <div class="project-over-contain">
-                    <img src="./images/imgsitescreen.jpg" alt="скрин заглавной страници сайта" />
-                    <div class="project-over-text">
+              <li class="card card-margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <img class="card__image" src="./images/imgsitescreen.jpg" alt="скрин заглавной страници сайта" />
+                    <div class="card__overlay">
                       <p>
                         «Пароль „Рыба-меч“» (англ. «Swordfish») — американский триллер 2001 года.
                         Режиссёр — Доминик Сена. В главных ролях — Хью Джекман, Джон Траволта, Хэлли
@@ -256,9 +258,9 @@
                       </p>
                     </div>
                   </div>
-                  <div class="project-list-border">
-                    <h3 class="project-header">Growing Business</h3>
-                    <p class="project-description">Приложение</p>
+                  <div class="card__borders">
+                    <h3 class="card__title">Growing Business</h3>
+                    <p class="card__type">Приложение</p>
                   </div>
                 </a>
               </li>
@@ -268,91 +270,89 @@
       </section>
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
       <div class="container">
-        <div class="footer-flex">
-          <div class="adress-block">
-            <a href="./index.html" lang="en" class="footer-logo logo"
-              ><span class="logo-accent"> Web</span>Studio</a
+        <div class="footer__container">
+          <div class="footer__kontakt">
+            <a href="./index.html" lang="en" class="logo logo--footer"
+              ><span class="logo__highlight"> Web</span>Studio</a
             >
-            <address>
-              <ul class="footer-list">
-                <li class="item">
-                  <a
+            <address class="adress">
+              <ul class="adress__list">
+                <li class="adress__item">
+                  <a  class="adress__phis"
                     href="https://goo.gl/maps/paLrzJ1DZaffjFaJ6"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    class="footer-adress"
-                  >
+                    rel="noopener noreferrer">
                     г. Киев, пр-т Леси Украинки, 26
                   </a>
                 </li>
-                <li class="item">
-                  <a href="mailto:info@devstudio.com" lang="en" class="footer-contact"
+                <li class="adress__item">
+                  <a href="mailto:info@devstudio.com" lang="en" class="adress__call"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="item">
-                  <a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a>
+                <li class="adress__item">
+                  <a href="tel:+380991111111" class="adress__call">+38 099 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-socials">
-            <p>присоединяйтесь</p>
-            <div>
-              <ul class="footer-social-links-block">
-                <li>
-                  <a href="#">
-                    <svg>
+
+          <div class="socials--footer">
+            <p class="socials__title--footer">присоединяйтесь</p>
+              <ul class="socials__list socials__list--footer">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" 
+                   href="#">
+                    <svg class="socials__logo socials__logo--footer">
                       <use href="./images/logo/icons.svg#icon-soc-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" href="#">
+                    <svg class="socials__logo socials__logo--footer">
                       <use href="./images/logo/icons.svg#icon-soc-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" href="#">
+                    <svg class="socials__logo socials__logo--footer" >
                       <use href="./images/logo/icons.svg#icon-soc-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" href="#">
+                    <svg class="socials__logo socials__logo--footer">
                       <use href="./images/logo/icons.svg#icon-soc-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
-            </div>
+            
           </div>
-          <div class="footer-subscribe">
-            <p>Подпишитесь на рассылку</p>
 
-            <form class="footer-subscribe-form">
-              <label for="subscibe-email"></label>
-              <input
-                type="email"
-                name="subscibe-email"
-                id="subscibe-email"
-                class="subscribe-email-box"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="subs button">
+          <div class="subscribe subscribe_position">
+            <p class="subscribe__title">Подпишитесь на рассылку</p>
+
+            <form class="subscribe__form">
+            <label for="subscibe-email"></label>
+            <input type="email" name="subscibe-email" id="subscibe-email" class="subscribe__input"
+            placeholder="E-mail"/>
+            <button type="submit" class="button button_subscribe">
                 Подписаться
-                <svg class="subs-button-icon">
+                <svg class="subscribe__icon">
                   <use href="./images/logo/icons.svg#icon-subscribe-icon"></use>
                 </svg>
-              </button>
+            </button>
             </form>
           </div>
+        </div>
+
+          
         </div>
       </div>
     </footer>
