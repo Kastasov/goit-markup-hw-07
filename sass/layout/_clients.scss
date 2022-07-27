@@ -1,0 +1,41 @@
+.section_clients {
+    background-color: var(--background-white);
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    color: var(--social-madia-logo-color);
+
+
+    &__link {
+        display: flex;
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px;
+        border: 1px solid var(--social-madia-logo-color);
+        border-radius: 4px;
+        transition: color 250ms var(--time-func), border-color 250ms var(--time-func);
+
+
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+        outline: none;
+        }
+        }
+    &__item {
+        margin-left: 30px;
+
+
+        &:first-child {
+        margin-left: 0px;
+        }
+    }
+    &__logo {
+        max-width: 100%;
+        max-height: 100%;
+        fill: currentColor;
+    }
+}

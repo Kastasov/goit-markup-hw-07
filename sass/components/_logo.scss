@@ -1,0 +1,19 @@
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--dark-color-for-light-theme-logo);
+
+
+    &__highlight {
+        color: var(--accent-color);
+    }
+
+    &--footer {
+        color: var(--light-color-for-dark-theme-logo);
+        
+    }
+}

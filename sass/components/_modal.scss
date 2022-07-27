@@ -1,0 +1,216 @@
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    max-height: 581px;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--background-white);
+    transition: opacity 250ms var(--time-func), visibility 250ms var(--time-func);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        color: var(--header-link-color);
+        margin-bottom: 12px;
+    }
+
+
+    &__background-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background-color: var(--modal-over-color);
+        transition: opacity 250ms var(--time-func), visibility 250ms var(--time-func);
+
+     
+    }
+
+
+    &__close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 0;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-color: var(--background-white);
+        color: var(--dark-color-for-light-theme-logo);
+        align-items: center;
+        justify-content: center;
+        transition: color 250ms var(--time-func);
+
+
+        &:hover,
+        &:focus {
+            color: var(--hover-accent-color);
+        }
+    
+
+        &-icon {
+            display: block;
+            width: 11px;
+            height: 11px;
+            fill: currentColor;
+        }
+    }
+}
+
+
+.request-form {
+    text-align: center;
+}
+
+
+
+.input-section {
+    text-align: start;
+
+    &--margin {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        display: block;
+        font-size: 12px;
+        line-height: 1.12;
+        letter-spacing: 0.01em;
+        color: var(--header-contact-color);
+        margin-bottom: 4px;
+    }
+
+    &__input-area {
+        display: block;
+        width: 100%;
+        height: 40px;
+        border: 1px solid var(--form-input-border);
+        border-radius: 4px;
+        padding: 12px 16px 12px 42px;
+        color: var(--header-color);
+        transition: border 250ms var(--time-func);
+
+        &:focus {
+                border: 1px solid var(--hover-accent-color);
+                outline: none;
+        }
+        
+        &:focus+.input-section__icon {
+                fill: var(--hover-accent-color);
+        }
+        
+        
+        &::placeholder {
+                font-size: 14px;
+                line-height: 1.12;
+                letter-spacing: 0.01em;
+                color: var(--placeholder-text-color);
+        }
+    }
+
+    &__input-block {
+        position: relative;
+        color: var(--header-link-color);
+    }
+
+    &__icon {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: currentColor;
+        transition: fill 250ms var(--time-func);
+    }
+
+    &__textarea {
+        padding-left: 16px;
+        resize: none;
+        height: 120px;
+    }
+}
+
+
+
+
+
+.button_request-form {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.licence {
+    line-height: 1.71;
+
+    &__link {
+        color: var(--accent-color);
+        text-decoration: underline;
+     
+
+        &:hover {
+            color: var(--hover-accent-color);
+                }
+    }   
+
+
+
+    &__margin {
+        margin-top: 20px;
+    }
+
+
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+
+
+        &:checked+.licence__label .licence__check-icon {
+            background-origin: border-box;
+            background-image: url(../images/logo/icon-check.svg);
+            background-position: center;
+            background-size: cover;
+            border: none;
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__check-icon {
+        margin-right: 8px;
+        border: 2px solid var(--header-link-color);
+        border-radius: 3px;
+        width: 15px;
+        height: 15px;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
