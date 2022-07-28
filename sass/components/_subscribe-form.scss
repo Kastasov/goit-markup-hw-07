@@ -47,12 +47,11 @@
         fill: currentColor;
         margin-left: 10px;
     }
-}
 
-.button_subscribe {
-    margin-left: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
+    &__button {
+        @extend %flex-centered;
+        margin-left: 12px;
+        
+    }
+}

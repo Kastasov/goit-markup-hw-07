@@ -59,12 +59,13 @@
     }
 
     &__overlay {
+        padding: 63px 24px;
         position: absolute;
         top: 0;
         width: 100%;
         height: 100%;
         transform: translatey(101%);
-        padding: 63px 24px;
+        
         font-size: 18px;
         line-height: 1.56;
         color: var(--light-color-for-dark-theme-logo);

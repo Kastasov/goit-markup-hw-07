@@ -17,9 +17,7 @@
 
 
     &-section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-centered;
         height: 120px;
         border-radius: 4px;
         background-color: var(--body-accent-background);
